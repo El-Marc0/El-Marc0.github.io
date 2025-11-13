@@ -1,0 +1,123 @@
+:root{
+  --violet: #6b2eb9;
+  --bleu-clair: #d9e8ff;
+  --bg: #faf8ff;
+  --max-w: 900px;
+  --police: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:var(--police);background:var(--bg);color:#222}
+
+.wrap{max-width:var(--max-w);margin:0 auto;padding:48px 20px}
+
+header.hero{
+  background:linear-gradient(180deg, rgba(107,46,185,0.95), rgba(107,46,185,0.98));
+  color:#fff;
+  padding:80px 20px;
+  border-radius:12px;
+  text-align:center;
+}
+header.hero h1{
+  margin:0;font-size:clamp(34px,6vw,72px);letter-spacing:1px;font-weight:700;
+}
+
+section{margin:48px 0;padding:28px;border-radius:10px}
+.texte-bleu{
+  background:var(--bleu-clair);
+  color:#05204b;
+  padding:24px;border-radius:10px;line-height:1.6;font-size:1.05rem;
+}
+
+h2.sous-titre{
+  color:var(--violet);
+  font-size:clamp(20px,4vw,40px);
+  margin:10px 0 18px 0;font-weight:700;text-align:left;
+}
+
+footer{
+  background:var(--violet);color:#fff;padding:20px;border-radius:10px;text-align:center;margin-top:36px;
+}
+
+.contact{font-weight:600;letter-spacing:0.4px}
+
+@media (max-width:600px){
+  .wrap{padding:24px 14px}
+  header.hero{padding:56px 14px}
+}
+
+.liens {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.carte-lien {
+    background: var(--bleu-clair);
+    color: #05204b;
+    padding: 32px 48px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+    min-width: 220px;
+}
+
+.carte-lien:hover {
+	background: var(--violet);
+	color: #fff;
+	transform: translateY(-5px);
+	box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.intro {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	max-width: 700px;
+	margin: 0 auto;
+	color: #FFF;
+}
+
+.grille-cours {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 28px;
+	margin-top: 40px;
+}
+
+.carte-cours {
+	background: var(--bleu-clair);
+	color: #05204b;
+	border-radius: 12px;
+	padding: 28px;
+	text-align: center;
+	font-weight: 600;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+	transition: all 0.25s ease;
+	text-decoration: none;
+}
+
+.carte-cours:hover {
+	background: var(--violet);
+	color: #fff;
+	transform: translateY(-5px);
+	box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.retour {
+	display: inline-block;
+	margin-top: 32px;
+	text-decoration: none;
+	font-weight: 600;
+	color: var(--violet);
+	transition: color 0.2s;
+}
+
+.retour:hover {
+	color: #000;
+}
